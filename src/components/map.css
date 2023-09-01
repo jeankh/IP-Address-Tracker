@@ -1,0 +1,5 @@
+.map{
+    flex: 3;
+    z-index: 1;
+    position: relative;
+}

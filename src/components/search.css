@@ -1,0 +1,76 @@
+.search {
+    flex: 1;
+    background-image: url(../assets/pattern-bg-desktop.png) ;
+    height :30vh;
+    width: 100%;
+    padding-top: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative
+}
+.search-from {
+    display: flex ;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    margin-bottom: 32px;
+    min-width: 65%;
+}
+
+.search h1{
+    font-size:40px;
+    color: #ffffff;
+    padding-bottom: 1rem;
+}
+.search form input{
+    
+    padding: 2rem ;
+    width:  550px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    font-size: 18px ;
+    color: hsl(0, 0%, 17%);
+    cursor: pointer;
+    outline: none;
+}
+.search form input:hover {
+    cursor: pointer
+}
+
+.search form button{
+    padding: 2.2rem 2rem ;
+    border: none;
+    border-radius: 0 20px 20px 0 ;
+    cursor: pointer;
+    outline: none;
+    background-color: hsl(0, 0%, 17%)
+}
+
+.search form button:hover {
+    background-color:hsl(0, 0%, 59%);
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+/* Media query for 375px viewport width */
+@media (max-width: 720px) {
+    .search {
+        height :40vh;
+        
+    }
+    .search h1 {
+        font-size: 30px; 
+      }
+      
+    .search form input{
+        padding: 1rem;
+        width:  200px;
+        
+
+    }
+    .search form button{
+        padding: 1rem;
+    }
+    
+  }
