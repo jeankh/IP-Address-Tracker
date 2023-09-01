@@ -5,7 +5,7 @@
     
     
     font-family: 'Rubik', sans-serif;
-    font-weight: 400, 500, 700;
+    font-weight: 400;
     margin: 0 ;
 }
 .ip-app {
@@ -14,6 +14,9 @@
     min-height: 100vh;
 }
 footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     flex: 1; 
     background-image: url(./assets/pattern-bg-desktop.png) ;
     background-size: cover;

@@ -16,7 +16,7 @@
     max-width: 1400px;
     min-width: 70%;
     padding: 0px;
-    align-items: left;
+    justify-content: left;
     border-radius: 20px;
   }
   

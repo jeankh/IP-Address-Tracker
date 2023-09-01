@@ -10,6 +10,8 @@ function App() {
   const [location, setLocation] = useState('');
   const [timezone, setTimezone] = useState('');
   const [isp, setIsp] = useState('');
+  const [btnDisable, setBtnDisable] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const [latitude, setLatitude] = useState('37.40599');
   const [longitude, setLongitude] = useState('-122.078514');
@@ -26,7 +28,7 @@ function App() {
         setLatitude(data.location.lat);
         setLongitude(data.location.lng);
       } catch (error) {
-        console.error('Error fetching IP address:', error);
+        setErrorMessage(true);
       }
     }
 
@@ -36,6 +38,8 @@ function App() {
   // Function to update data when user submits input
   const handleSearch = async (newIpAddress) => {
     try {
+      setBtnDisable(true);
+      setErrorMessage(false);
       const response = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_xzZpxlhISuftO4eLpk50F6q2xICpV&ipAddress=${newIpAddress}`);
       const data = await response.json();
       setIpAddress(data.ip);
@@ -45,8 +49,9 @@ function App() {
       setLatitude(data.location.lat);
       setLongitude(data.location.lng);
     } catch (error) {
-      console.error('Error fetching IP address:', error);
+      setErrorMessage(true);
     }
+    setBtnDisable(false);
   };
 
   return (
@@ -56,7 +61,8 @@ function App() {
         <meta name='description' content='A simple IP address finder' />
         <meta name='keywords' content='ip address, location, timezone, isp' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Hamlet_by_Henry_Fuseli.jpg/1200px-Hamlet_by_Henry_Fuseli.jpg' />
+        <link rel='icon' href='./assets/ip-address-svgrepo-com.svg' />
+        <meta property="og:image" content="./assets/app-view.png"></meta>
         <meta charset='utf-8' />
         <meta name='theme-color' content='#000000' />
         <meta name='description' content='Web site created using create-react-app' />
@@ -65,7 +71,7 @@ function App() {
         <title>IP Address Tracker</title>
       </Helmet>
         <div className='content'>
-          <Search handleSearch={handleSearch} />
+          <Search handleSearch={handleSearch} errorMessage={errorMessage} btnDisable={btnDisable}/>
           <Location ipAddress={ipAddress} location={location} timezone={timezone} isp={isp} />
           <Map latitude={latitude} longitude={longitude} />
         </div>
