@@ -3,7 +3,6 @@ import './App.css';
 import Search from './components/Search';
 import Location from './components/Location';
 import Map from './components/Map';
-import { Helmet } from 'react-helmet';
 
 function App() {
   const [ipAddress, setIpAddress] = useState('');
@@ -56,17 +55,6 @@ function App() {
 
   return (
     <div className='ip-app'>
-      <Helmet>
-        <meta name='author' content='Jean KHOGE' />
-        <meta name='description' content='A simple IP address finder' />
-        <meta name='keywords' content='ip address, location, timezone, isp' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='./assets/ip-address-svgrepo-com.svg' />
-        <meta property="image" content="./assets/app-view.png"></meta>
-        <meta charset='utf-8' />
-        <meta name='theme-color' content='#000000' />
-        <title>IP Address Tracker</title>
-      </Helmet>
         <div className='content'>
           <Search handleSearch={handleSearch} errorMessage={errorMessage} btnDisable={btnDisable}/>
           <Location ipAddress={ipAddress} location={location} timezone={timezone} isp={isp} />
