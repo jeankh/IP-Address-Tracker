@@ -47,7 +47,6 @@ To run this project, you need to have the following software installed on your m
 
 3. Install dependencies:
    ```bash
-       Copy code
        npm install
    ```
 
@@ -56,7 +55,6 @@ To run this project, you need to have the following software installed on your m
 1. Start the development server:
 
    ```bash
-       Copy code
        npm start
    ```
 
