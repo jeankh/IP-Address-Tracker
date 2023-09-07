@@ -2,7 +2,7 @@
 
 IP Address Tracker is a web application that allows users to explore the geographical locations of IP addresses and domains. It integrates the IP Geolocation API by IPify and the LeafletJS library to provide an interactive and informative experience.
 
-![App Screenshot](screenshot.png)
+![Alt text](src/assets/app-view.png)
 
 ## Table of Contents
 
@@ -41,10 +41,10 @@ To run this project, you need to have the following software installed on your m
 
 2. Navigate to the project directory:
 
-   ````bash
+   ```bash
        Copy code
-       cd ip-address-tracker```
-   ````
+       cd ip-address-tracker
+   ```
 
 3. Install dependencies:
    ```bash
