@@ -11,6 +11,7 @@ IP Address Tracker is a web application that allows users to explore the geograp
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+- [Demo](#demo)
 - [Technologies](#technologies)
 
 ## Features
@@ -61,6 +62,10 @@ To run this project, you need to have the following software installed on your m
 2. Open your web browser and go to http://localhost:3000 to access the IP Address Tracker app.
 
 3. Use the search bar to enter an IP address or domain and explore its location on the map.
+
+## Demo
+
+Check out the live demo of the Rock, Paper, Scissors game [here](https://ip-address-tracker.jean.khoge.fr/).
 
 ### Technologies
 
