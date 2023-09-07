@@ -42,7 +42,6 @@ To run this project, you need to have the following software installed on your m
 2. Navigate to the project directory:
 
    ```bash
-       Copy code
        cd ip-address-tracker
    ```
 
