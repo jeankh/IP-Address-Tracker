@@ -75,14 +75,14 @@ function App() {
       </div>
       <footer>
         <p>
-          © 2023{" "}
+          © 2023
           <a
             href="https://www.linkedin.com/in/jean-khoge/"
             target="_blank"
             rel="noreferrer"
           >
             Jean KHOGE
-          </a>{" "}
+          </a>
         </p>
       </footer>
     </div>
