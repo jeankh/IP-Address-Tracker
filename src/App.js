@@ -76,11 +76,7 @@ function App() {
       <footer>
         <p>
           © 2023
-          <a
-            href="https://www.linkedin.com/in/jean-khoge/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://jean.khoge.fr/" target="_blank" rel="noreferrer">
             Jean KHOGE
           </a>
         </p>
